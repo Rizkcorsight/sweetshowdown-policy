@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Showdown — Privacy Policy</title>
+  <style>
+    body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+           max-width: 720px; margin: 2em auto; padding: 0 1em; color: #1c1c1e; }
+    h1 { font-size: 1.8em; }
+    h2 { margin-top: 2em; font-size: 1.25em; color: #4a3a52; }
+    code { background: #f4f0f8; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+    a { color: #c1428f; }
+  </style>
+</head>
+<body>
+  <h1>Sweet Showdown — Privacy Policy</h1>
+  <p>Last updated: 2026-04-29</p>
+
+  <h2>Plain-language summary</h2>
+  <p>Sweet Showdown collects nothing. Everything you make stays on your iPad or iPhone. We don't have servers, accounts, or user logins. We don't talk to advertisers or analytics services. There is no in-app purchase.</p>
+
+  <h2>What's stored on your device</h2>
+  <ul>
+    <li><strong>Game progress</strong> (XP, completed Season chapters, daily streak, unlocked judges and trophies) — saved in your device's UserDefaults.</li>
+    <li><strong>Saved dishes</strong> — when you finish a round and the dish is added to your Gallery, an image and a recipe summary are saved to your app's Documents folder. They never leave your device unless YOU choose to share them via the iOS Share Sheet (Photos, AirDrop, Messages, etc.).</li>
+    <li><strong>In-progress rounds</strong> — if you're pulled away mid-round, we save a small snapshot so you can resume on next launch. Stale snapshots (3+ days old) are auto-deleted.</li>
+  </ul>
+
+  <h2>What's NOT collected</h2>
+  <ul>
+    <li>No name. No email. No phone number. No location. No birthdate.</li>
+    <li>No camera, microphone, or contacts access.</li>
+    <li>No advertising identifiers (IDFA, IDFV).</li>
+    <li>No analytics events.</li>
+    <li>No crash reports sent to us. (iOS may send anonymized crash data to Apple if your device's Diagnostics setting opts in — that's between you and Apple.)</li>
+  </ul>
+
+  <h2>Network usage</h2>
+  <p>Sweet Showdown is fully offline by design. The only network activity is Apple's local-only "Nearby" peer-to-peer Wi-Fi/Bluetooth discovery, used for the head-to-head Versus mode. <strong>In v1, this feature is disabled.</strong> No data ever leaves your local network in any release.</p>
+
+  <h2>Required-reason API declarations</h2>
+  <p>Per Apple's Privacy Manifest, Sweet Showdown declares the following required-reason APIs:</p>
+  <ul>
+    <li><code>UserDefaults</code> — to save your progress and settings (CA92.1)</li>
+    <li><code>FileTimestamp</code> — to age-check saved snapshots (C617.1)</li>
+    <li><code>DiskSpace</code> — to verify there's room before saving a dish (E174.1)</li>
+    <li><code>SystemBootTime</code> — to compute relative timestamps (35F9.1)</li>
+  </ul>
+
+  <h2>Children and Family Sharing</h2>
+  <p>Sweet Showdown is in the Kids Category. We follow Apple's guidelines for apps targeting children, including:</p>
+  <ul>
+    <li>No third-party analytics or advertising SDKs.</li>
+    <li>No external links exposed to the child without a parental gate.</li>
+    <li>No identifying information collected from the child.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If we ever change the policy, the "Last updated" date at the top will change, and we'll mention the change in the App Store release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:support@sweetshowdown.app">support@sweetshowdown.app</a></p>
+</body>
+</html>
