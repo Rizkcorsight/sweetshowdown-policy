@@ -31,7 +31,6 @@ binary at all.
 ## What's NOT collected
 
 - No name. No email. No phone number. No location. No birthdate.
-  (Earlier builds had a "player name" field — it's been removed in v1.)
 - No camera, microphone, or contacts access.
 - No advertising identifiers (IDFA, IDFV).
 - No analytics events.
