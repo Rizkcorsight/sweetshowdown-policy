@@ -119,4 +119,4 @@ change, and we'll mention the change in the App Store release notes.
 
 ## Contact
 
-Email: support@sweetshowdown.app
+Email: Rizkcorsight@Rizkcorsight.com
