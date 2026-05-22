@@ -15,54 +15,54 @@
 </head>
 <body>
   <h1>Sweet Showdown — Privacy Policy</h1>
-  <p>Last updated: 2026-05-01</p>
+  <p>Last updated: 2026-05-22</p>
 
   <h2>Plain-language summary</h2>
-  <p>Sweet Showdown collects nothing. Everything you make stays on your iPad or iPhone. We don't have servers, accounts, or user logins. We don't talk to advertisers or analytics services. There is no in-app purchase. The app never makes a network call — there's no internet code in the binary at all.</p>
+  <p>Sweet Showdown collects nothing. Everything you make stays on your device. We don't have servers, accounts, or user logins. We don't talk to advertisers or analytics services. There is no in-app purchase. The app never makes a network call — there's no internet code in the binary at all.</p>
 
   <h2>What's stored on your device</h2>
   <ul>
-    <li><strong>Game progress</strong> (XP, completed Season chapters, daily streak, unlocked judges and trophies, sound/music/haptics preferences) — saved in your device's <code>UserDefaults</code>.</li>
-    <li><strong>Saved dishes</strong> — when you finish a round and the dish is added to your Gallery, a PNG image plus a recipe summary are saved to the app's Documents folder. They never leave your device unless YOU choose to share them via the iOS Share Sheet (Photos, AirDrop, Messages, etc.).</li>
+    <li><strong>Game progress</strong> (XP, completed Season chapters, daily streak, unlocked judges and trophies, sound/music/haptics preferences) — saved in local app-private storage on your device.</li>
+    <li><strong>Saved dishes</strong> — when you finish a round and the dish is added to your Gallery, a PNG image plus a recipe summary are saved to the app's private storage. They never leave your device unless YOU choose to share them via the system share sheet (Photos, AirDrop, Messages, Files, Mail, etc.).</li>
     <li><strong>In-progress rounds</strong> — if you're pulled away mid-round, we save a small snapshot so you can resume on next launch. Stale snapshots (3+ days old) are auto-deleted.</li>
-    <li><strong>Photo Library (only on save-to-Photos)</strong> — if you tap "Save to Photos" on a finished dish, iOS prompts you for permission and the PNG is added to your Photo Library. We never read existing photos.</li>
+    <li><strong>Photo Library / media save (only when you choose it)</strong> — if you save or share a finished dish, the operating system handles that destination. We never read existing photos.</li>
   </ul>
 
   <h2>What's NOT collected</h2>
   <ul>
     <li>No name. No email. No phone number. No location. No birthdate.</li>
     <li>No camera, microphone, or contacts access.</li>
-    <li>No advertising identifiers (IDFA, IDFV).</li>
+    <li>No advertising identifiers.</li>
     <li>No analytics events.</li>
-    <li>No crash reports sent to us. (iOS may send anonymized crash data to Apple if your device's Diagnostics setting opts in — that's between you and Apple.)</li>
-    <li>No third-party SDKs at all — every framework imported is a first-party Apple framework (SwiftUI, RealityKit, AVFoundation, CoreMotion, WidgetKit).</li>
+    <li>No crash reports sent to us. Apple or Google may receive store-level diagnostics under your device and account settings; that is handled by the operating system, not by Sweet Showdown.</li>
+    <li>No third-party analytics, advertising, social, or tracking tools.</li>
   </ul>
 
   <h2>Network usage</h2>
-  <p>Sweet Showdown is fully offline by design. <strong>The app makes zero network calls of any kind</strong> — no <code>URLSession</code>, no peer-to-peer discovery, no Bonjour, no MultipeerConnectivity, no remote config. The Versus head-to-head mode is pass-the-iPad only: two players alternate turns on the same device. (An earlier "Nearby" peer-discovery prototype that briefly broadcast a display name over local WiFi has been removed entirely from the v1 build.)</p>
+  <p>Sweet Showdown is fully offline by design. <strong>The app makes zero network calls of any kind</strong> — no <code>URLSession</code>, no peer-to-peer discovery, no Bonjour, no MultipeerConnectivity, no remote config. The local party/head-to-head mode is pass-the-device only: players alternate turns on the same device. (An earlier "Nearby" peer-discovery prototype that briefly broadcast a display name over local WiFi has been removed entirely from the v1 build.)</p>
 
   <h2>Sound, motion, and Live Activities</h2>
   <ul>
-    <li><strong>Sound</strong> — every sound effect and the background music are <em>generated procedurally on-device</em> via <code>AVAudioEngine</code>; no audio files ship with the app. The audio session uses <code>.playback</code> with <code>.mixWithOthers</code>, so if you have Spotify or Apple Music playing, Sweet Showdown's music plays at the same time without ducking your other audio. The app also listens for system audio interruptions (phone calls, alarms) and resumes its own audio when iOS clears the interruption — no audio data ever leaves the device.</li>
-    <li><strong>Motion</strong> — when you place toppings, tiny iPad tilts subtly affect how sprinkles roll using <code>CMMotionManager</code>. Motion data is read in-process and discarded immediately; nothing is logged, stored, or transmitted. This is why the app declares <code>NSMotionUsageDescription</code> in <code>Info.plist</code>.</li>
+    <li><strong>Sound</strong> — sound effects, music, and read-aloud voices are generated or played on-device. No microphone is used, and no audio data ever leaves the device.</li>
+    <li><strong>Motion</strong> — when motion is available, tiny device tilts can subtly affect how sprinkles roll. Motion data is read in-process and discarded immediately; nothing is logged, stored, or transmitted.</li>
     <li><strong>Live Activities</strong> — the in-progress round timer can show on your Lock Screen / Dynamic Island via WidgetKit. The Live Activity reads round state in-process; no network or shared container.</li>
-    <li><strong>Speech</strong> — judge voices use Apple's on-device <code>AVSpeechSynthesizer</code>. Speech generation never leaves the device.</li>
+    <li><strong>Speech</strong> — judge/read-aloud voices use the platform's on-device speech system. Speech generation never leaves the device.</li>
   </ul>
 
   <h2>Required-reason API declarations</h2>
-  <p>Per Apple's Privacy Manifest (<code>PrivacyInfo.xcprivacy</code> in the bundle), Sweet Showdown declares the following required-reason APIs:</p>
+  <p>On Apple platforms, the Privacy Manifest (<code>PrivacyInfo.xcprivacy</code> in the bundle) declares the following required-reason APIs:</p>
   <ul>
     <li><code>UserDefaults</code> — to save your progress and settings (CA92.1)</li>
     <li><code>FileTimestamp</code> — to age-check saved snapshots (C617.1)</li>
     <li><code>DiskSpace</code> — to verify there's room before saving a dish (E174.1)</li>
     <li><code>SystemBootTime</code> — to compute relative timestamps (35F9.1)</li>
   </ul>
-  <p>The Privacy Manifest also explicitly declares <strong>"Data Not Collected"</strong>, which is enforced by the absence of any networking code in the binary.</p>
+  <p>The Privacy Manifest also explicitly declares <strong>"Data Not Collected"</strong>, which matches the absence of app networking and data collection.</p>
 
   <h2>Children and Family Sharing</h2>
-  <p>Sweet Showdown ships in the App Store Kids Category with the <strong>Ages 5 and Under</strong> age band. We follow Apple's guidelines for apps targeting children:</p>
+  <p>Sweet Showdown is designed for younger children and families. We follow the privacy expectations for children and family apps:</p>
   <ul>
-    <li>No third-party analytics, advertising, or social SDKs.</li>
+    <li>No third-party analytics, advertising, social, or tracking tools.</li>
     <li>No external links exposed to the child without a parental gate.</li>
     <li>No identifying information collected from the child — no usernames, no profile pictures, no chat.</li>
     <li>No In-App Purchases. The app is paid up-front; once you own it you have everything.</li>
@@ -71,10 +71,10 @@
   </ul>
 
   <h2>Sharing a dish</h2>
-  <p>If you tap the "Share" button on a finished-round sticker or in the Gallery, iOS opens its standard Share Sheet so you can send the PNG via Messages, Mail, AirDrop, Notes, Photos, or any third-party share extension you have installed. The Share Sheet itself is iOS — Sweet Showdown does not see what destination you choose or whether you actually send it. Once you do send something, that destination's privacy policy applies.</p>
+  <p>If you tap the "Share" button on a finished-round sticker, poster, cookbook, or Gallery item, the operating system opens its standard share sheet so you can choose where it goes. The share sheet itself is provided by the operating system — Sweet Showdown does not see what destination you choose or whether you actually send it. Once you do send something, that destination's privacy policy applies.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If we ever change the policy, the "Last updated" date at the top will change, and we'll mention the change in the App Store release notes.</p>
+  <p>If we ever change the policy, the "Last updated" date at the top will change, and we'll mention material changes in store release notes.</p>
 
   <h2>Contact</h2>
   <p>Email: <a href="mailto:Rizkcorsight@Rizkcorsight.com">Rizkcorsight@Rizkcorsight.com</a></p>
