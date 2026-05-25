@@ -108,3 +108,23 @@ change, and we'll mention material changes in store release notes.
 ## Contact
 
 Email: Rizkcorsight@Rizkcorsight.com
+
+<!-- policy-translations-start -->
+## Localized Privacy Policies
+
+The root URL remains the canonical English policy. Localized convenience translations are available at:
+
+- Español: `https://rizkcorsight.github.io/sweetshowdown-policy/es/`
+- Français: `https://rizkcorsight.github.io/sweetshowdown-policy/fr/`
+- Deutsch: `https://rizkcorsight.github.io/sweetshowdown-policy/de/`
+- Italiano: `https://rizkcorsight.github.io/sweetshowdown-policy/it/`
+- 日本語: `https://rizkcorsight.github.io/sweetshowdown-policy/ja/`
+- 한국어: `https://rizkcorsight.github.io/sweetshowdown-policy/ko/`
+- Português (Brasil): `https://rizkcorsight.github.io/sweetshowdown-policy/pt-BR/`
+- 简体中文: `https://rizkcorsight.github.io/sweetshowdown-policy/zh-Hans/`
+- 繁體中文: `https://rizkcorsight.github.io/sweetshowdown-policy/zh-Hant/`
+- العربية: `https://rizkcorsight.github.io/sweetshowdown-policy/ar/`
+- עברית: `https://rizkcorsight.github.io/sweetshowdown-policy/he/`
+- Nederlands: `https://rizkcorsight.github.io/sweetshowdown-policy/nl/`
+- Русский: `https://rizkcorsight.github.io/sweetshowdown-policy/ru/`
+<!-- policy-translations-end -->
