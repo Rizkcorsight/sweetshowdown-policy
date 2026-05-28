@@ -56,15 +56,15 @@
     <li><strong>Speech</strong> — judge/read-aloud voices use the platform's on-device speech system. Speech generation never leaves the device.</li>
   </ul>
 
-  <h2>Required-reason API declarations</h2>
-  <p>On Apple platforms, the Privacy Manifest (<code>PrivacyInfo.xcprivacy</code> in the bundle) declares the following required-reason APIs:</p>
+  <h2>Platform privacy declarations</h2>
+  <p>Sweet Showdown's platform privacy declarations cover the following local-only system capabilities:</p>
   <ul>
     <li><code>UserDefaults</code> — to save your progress and settings (CA92.1)</li>
     <li><code>FileTimestamp</code> — to age-check saved snapshots (C617.1)</li>
     <li><code>DiskSpace</code> — to verify there's room before saving a dish (E174.1)</li>
     <li><code>SystemBootTime</code> — to compute relative timestamps (35F9.1)</li>
   </ul>
-  <p>The Privacy Manifest also explicitly declares <strong>"Data Not Collected"</strong>, which matches the absence of app networking and data collection.</p>
+  <p>The store privacy declarations also state <strong>"Data Not Collected"</strong>, which matches the absence of app networking and data collection.</p>
 
   <h2>Children and Family Sharing</h2>
   <p>Sweet Showdown is designed for younger children and families. We follow the privacy expectations for children and family apps:</p>

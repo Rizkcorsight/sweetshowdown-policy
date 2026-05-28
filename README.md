@@ -63,17 +63,17 @@ local WiFi has been removed entirely from the v1 build.)
 - **Speech** — judge/read-aloud voices use the platform's on-device
   speech system. Speech generation never leaves the device.
 
-## Required-reason API declarations
+## Platform privacy declarations
 
-On Apple platforms, the Privacy Manifest (`PrivacyInfo.xcprivacy` in
-the bundle) declares the following required-reason APIs:
+Sweet Showdown's platform privacy declarations cover the following
+local-only system capabilities:
 
 - `UserDefaults` — to save your progress and settings (CA92.1)
 - `FileTimestamp` — to age-check saved snapshots (C617.1)
 - `DiskSpace` — to verify there's room before saving a dish (E174.1)
 - `SystemBootTime` — to compute relative timestamps (35F9.1)
 
-The Privacy Manifest also explicitly declares **"Data Not Collected"**,
+The store privacy declarations also state **"Data Not Collected"**,
 which matches the absence of app networking and data collection.
 
 ## Children and Family Sharing
