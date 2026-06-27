@@ -1,15 +1,16 @@
 Sweet Showdown — Privacy Policy
 ================================
 
-Last updated: 2026-05-22
+Last updated: 2026-06-27
 
 ## Plain-language summary
 
 Sweet Showdown collects nothing. Everything you make stays on your device.
-We don't have servers, accounts, or user logins. We don't
-talk to advertisers or analytics services. There is no in-app purchase.
-The app never makes a network call — there's no internet code in the
-binary at all.
+We don't have servers, accounts, or user logins, and we don't talk to
+advertisers or analytics services. The app includes a local 3-day full-access
+trial and an optional one-time unlock handled by Apple App Store or Google Play.
+Store systems are contacted only for purchase, restore, refund, receipt, or
+localized price display; no game, child, dish, photo, or gallery data is involved.
 
 ## What's stored on your device
 
@@ -39,15 +40,18 @@ binary at all.
   by the operating system, not by Sweet Showdown.
 - No third-party analytics, advertising, social, or tracking tools.
 
+## Purchases
+
+Sweet Showdown includes a 3-day full-access trial that starts locally on your device. After the trial, a single optional one-time purchase unlocks the app permanently. There is no subscription, no auto-renewal, no advertising, and no consumable purchase. Purchase, restore, receipt verification, refund handling, and localized price display are handled by Apple App Store or Google Play. We do not receive your payment card, billing address, Apple ID, Google account details, or store receipt contents.
+
 ## Network usage
 
-Sweet Showdown is fully offline by design. **The app makes zero
-network calls of any kind** — no `URLSession`, no peer-to-peer
-discovery, no Bonjour, no MultipeerConnectivity, no remote config.
-The local party/head-to-head mode is pass-the-device only: players
-alternate turns on the same device. (An earlier "Nearby"
-peer-discovery prototype that briefly broadcast a display name over
-local WiFi has been removed entirely from the v1 build.)
+Sweet Showdown has no developer server, no analytics endpoint, no advertising
+endpoint, no remote config, no peer-to-peer discovery, no Bonjour, and no
+MultipeerConnectivity. The local party/head-to-head mode is pass-the-device
+only: players alternate turns on the same device. Store-system networking can
+occur only when the operating system or app store displays pricing, processes
+the one-time unlock, restores purchases, verifies receipts, or handles refunds.
 
 ## Sound, motion, and Live Activities
 
@@ -73,8 +77,10 @@ local-only system capabilities:
 - `DiskSpace` — to verify there's room before saving a dish (E174.1)
 - `SystemBootTime` — to compute relative timestamps (35F9.1)
 
-The store privacy declarations also state **"Data Not Collected"**,
-which matches the absence of app networking and data collection.
+The store privacy declarations also state **"Data Not Collected"**, which
+matches the absence of developer data collection. Store purchase records are
+handled by Apple or Google under their own privacy policies and are not child,
+gameplay, dish, or gallery data collected by Sweet Showdown.
 
 ## Children and Family Sharing
 
@@ -85,8 +91,8 @@ the privacy expectations for children and family apps:
 - No external links exposed to the child without a parental gate.
 - No identifying information collected from the child — no usernames,
   no profile pictures, no chat.
-- No In-App Purchases. The app is paid up-front; once you own it you
-  have everything.
+- The optional one-time unlock is behind the parental gate where required.
+  There are no subscriptions, ads, tracking, chat, or consumable purchases.
 - No push notifications.
 - No multiplayer contact with strangers — Versus is one-device
   alternating turns only.
@@ -128,3 +134,10 @@ The root URL remains the canonical English policy. Localized convenience transla
 - Nederlands: `https://rizkcorsight.github.io/sweetshowdown-policy/nl/`
 - Русский: `https://rizkcorsight.github.io/sweetshowdown-policy/ru/`
 <!-- policy-translations-end -->
+<!-- store-audit-2026-06-27-start -->
+## Store Listing Alignment
+
+**Checked 2026-06-27.** This page was compared with the public App Store and Google Play listings. Where a store privacy or data-safety label was visible, it said the developer does not collect user data.
+
+**Accurate app behavior:** Game progress, saved dishes, gallery images, round snapshots, motion effects, Live Activities, speech output, and share/export files stay local. The 3-day trial starts locally; Apple App Store or Google Play handles only the one-time unlock, restore, refund, receipt, or price display, behind the parental gate where applicable. No accounts, ads, analytics, tracking, chat, or developer backend are used.
+<!-- store-audit-2026-06-27-end -->
