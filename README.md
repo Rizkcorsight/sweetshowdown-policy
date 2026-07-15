@@ -7,8 +7,10 @@ Last updated: 2026-06-30
 
 Sweet Showdown collects nothing. Everything you make stays on your device.
 We don't have servers, accounts, or user logins, and we don't talk to
-advertisers or analytics services. The app is paid upfront in the app stores
-and has no in-app purchases, subscriptions, ads, consumables, or unlock purchases.
+advertisers or analytics services. The app is free to download with a local
+3-day full-access trial. After the trial, one optional one-time purchase
+unlocks continued access. There is no subscription, automatic renewal,
+recurring charge, advertising, consumable purchase, or additional unlock.
 
 ## What's stored on your device
 
@@ -40,7 +42,7 @@ and has no in-app purchases, subscriptions, ads, consumables, or unlock purchase
 
 ## Purchases
 
-Sweet Showdown is paid upfront through the app store where you installed it. It has no in-app purchases, no subscriptions, no auto-renewal, no advertising, and no consumable purchases. We do not receive your payment card, billing address, Apple ID, Google account details, or store receipt contents.
+Sweet Showdown is free to download with a local 3-day full-access trial. After the trial, one optional one-time purchase unlocks continued access. There is no subscription, auto-renewal, recurring charge, consumable purchase, advertising, account, analytics, tracking, chat, or developer backend. We do not receive your payment card, billing address, Apple ID, Google account details, or store receipt contents.
 
 ## Network usage
 
@@ -89,7 +91,8 @@ the privacy expectations for children and family apps:
 - No external links exposed to the child without a parental gate.
 - No identifying information collected from the child — no usernames,
   no profile pictures, no chat.
-- There are no in-app purchases, subscriptions, ads, tracking, chat, or
+- There is one optional non-consumable unlock after the local 3-day trial;
+  there are no subscriptions, recurring charges, ads, tracking, chat, or
   consumable purchases.
 - No push notifications.
 - No multiplayer contact with strangers — Versus is one-device
@@ -137,5 +140,5 @@ The root URL remains the canonical English policy. Localized convenience transla
 
 **Checked 2026-06-30.** This page was compared with the public App Store and Google Play listings. Where a store privacy or data-safety label was visible, it said the developer does not collect user data.
 
-**Accurate app behavior:** Game progress, saved dishes, gallery images, round snapshots, motion effects, Live Activities, speech output, and share/export files stay local. Sweet Showdown is paid upfront in the app stores and has no in-app purchases, subscriptions, consumables, ads, accounts, analytics, tracking, chat, or developer backend.
+**Accurate app behavior:** Game progress, saved dishes, gallery images, round snapshots, motion effects, Live Activities, speech output, and share/export files stay local. Sweet Showdown is free to download with a local 3-day full-access trial. After the trial, one optional one-time purchase unlocks continued access. There is no subscription, auto-renewal, recurring charge, consumable purchase, advertising, account, analytics, tracking, chat, or developer backend.
 <!-- store-audit-2026-06-30-end -->
