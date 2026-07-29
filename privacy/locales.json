@@ -1,0 +1,38 @@
+{
+  "app": "Sweet Showdown",
+  "updated": "2026-07-29",
+  "englishPolicy": "../index.html",
+  "storeLocaleSources": [
+    "App Store Connect",
+    "Google Play"
+  ],
+  "locales": [
+    "en-US",
+    "ar",
+    "de",
+    "es",
+    "es-419",
+    "es-MX",
+    "fr",
+    "he",
+    "it",
+    "ja",
+    "pt-BR",
+    "zh-Hans"
+  ],
+  "localeModes": {
+    "en-US": "english-controlling-policy",
+    "ar": "existing-translation",
+    "de": "existing-translation",
+    "es": "existing-translation",
+    "es-419": "existing-translation",
+    "es-MX": "existing-translation",
+    "fr": "existing-translation",
+    "he": "existing-translation",
+    "it": "existing-translation",
+    "ja": "existing-translation",
+    "pt-BR": "existing-translation",
+    "zh-Hans": "existing-translation"
+  },
+  "sourceHash": "6ae63377a899a7b8"
+}
